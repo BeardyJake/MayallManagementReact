@@ -3,13 +3,8 @@ import logo from './MMLogo.png';
 import Color from 'color';
 
 const useStyles = makeStyles((theme) => ({
-    nav: {
+    appBar: {
         backgroundColor: '#EFEFEF',
-        height: '100px',
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        position: 'fixed',
-        zIndex: '1'
     },
     main: {
         padding: '160px 100px 140px 100px',
@@ -19,28 +14,27 @@ const useStyles = makeStyles((theme) => ({
         backgroundAttachment: 'fixed',
         backgroundSize: 'contain',
         backgroundColor: theme.palette.paper,
-        '@media (max-width:960px)': {
-            padding: '200px 50px 50px 50px',
+        [theme.breakpoints.down('md')]: {
+            padding: '150px 50px 100px 50px',
         },
     },
     button: {
-        flexGrow: 1,
         margin: '0 20px',
         width: '100%',
         fontSize: '24px',
         color: '#000',
         transition: 'all .3s ease-in-out 0s',
-        '@media (max-width:960px)': {
-            fontSize: '1rem',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '0.9rem',
             margin: '0'
         },
-        '@media (max-width:600px)': {
-            fontSize: '0.8rem'
-        },
+       /* [theme.breakpoints.down('xs')]: {
+            display: 'none'
+        },*/
     },
     headerContainer: {
         borderRadius: '10%',
-        '@media (max-width:960px)': {
+        [theme.breakpoints.down('md')]: {
             backgroundColor: 'rgba(149,228,239,0.3)',
         },
     },
@@ -49,13 +43,13 @@ const useStyles = makeStyles((theme) => ({
         //borderBottom: '4px solid #6B7A8F',
         paddingBottom: '10px',
         transition: 'all .4s ease-out 0s',
-        '@media (max-width:960px)': {
+        [theme.breakpoints.down('md')]: {
             fontSize: '4rem',
         },
     },
     subtitle: {
         transition: 'all .4s ease-out 0s',
-        '@media (max-width:960px)': {
+        [theme.breakpoints.down('md')]: {
             fontSize: '2rem',
         },
     },
@@ -77,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cardHead: {
         fontWeight: 'bold',
-        '@media (max-width:960px)': {
+        [theme.breakpoints.down('md')]: {
             fontSize: '1.2rem',
         },
     },
@@ -97,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     testCard: {
         margin: '0 200px',
         padding: '0 50px',
-        '@media (max-width:960px)': {
+        [theme.breakpoints.down('md')]: {
             margin: '0',
         },
     },

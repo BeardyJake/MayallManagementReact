@@ -1,7 +1,6 @@
 import { Container, Grid, Typography } from '@material-ui/core';
 import useStyles from './styles';
 import logo from './MMLogo.png';
-import { useRef } from 'react';
 
 const Header = (props) => {
     const classes = useStyles();

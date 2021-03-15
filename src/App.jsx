@@ -4,7 +4,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from './styles';
 import Testimonials from './Testimonials.jsx';
 import About from './About.jsx';
-import NavBar from './NavBar.jsx';
 import Header from './Header.jsx';
 import Contact from './Contact.jsx';
 import TopNav from './TopNav.jsx';
@@ -16,41 +15,36 @@ const App = () => {
     return (
         <>
 
-          {/*------------------------------Navigation Section------------------------------*/}
+        {/*------------------------------Navigation Section------------------------------*/}
 
           <CssBaseline />
-          <AppBar />
-          <main>
+          <TopNav />
 
-              {/*------------------------------Header Section------------------------------*/}
+        {/*------------------------------Header Section------------------------------*/}
 
-            <div className={classes.main}>
-                <Header id='topSection'/>
+            <div className={classes.main} id='main'>
+                <Header />
             </div>
 
-            {/*------------------------------About Section------------------------------*/}
+        {/*------------------------------About Section------------------------------*/}
 
-            <div className={classes.about}>
+            <div className={classes.about} id='about'>
                 <About />
             </div>
 
-            {/*------------------------------Testimonials Section------------------------------*/}
+        {/*------------------------------Testimonials Section------------------------------*/}
 
-            <div className={classes.testimonials}>
-                <Container maxWidth='lg'>
-                    <Typography className={classes.sectionHeader} variant='h2' align='center'>
-                        What People Say About Us
-                    </Typography>
-                    <Testimonials />
-                </Container>
-              </div>
+            <div className={classes.testimonials} id='testimonials'>
+                <Testimonials />
+            </div>
 
-              {/*------------------------------Contact Section------------------------------*/}
+        {/*------------------------------Contact Section------------------------------*/}
 
-            <div className={classes.contact}>
+            <div className={classes.contact} id='contact'>
                 <Contact />
             </div>
-          </main>
+
+        {/*------------------------------Footer Section------------------------------*/}
         </>
     )
 }
