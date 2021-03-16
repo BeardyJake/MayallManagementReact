@@ -1,4 +1,4 @@
-import { Card, CardActions, CardContent, CardMedia, Typography, Container, Grid } from '@material-ui/core';
+import { Button, Card, CardActions, CardContent, CardMedia, Typography, Container, Grid } from '@material-ui/core';
 import Carousel from 'react-material-ui-carousel';
 import useStyles from './styles';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuoteRounded';
@@ -15,6 +15,12 @@ const Testimonials = (props) => {
             </Typography>
             <Carousel 
             interval='8000'
+            navButtonsWrapperProps={{
+                style: {
+                    top: '35%',
+                    bottom: 'unset'
+                },
+            }}
             >
                 <Card className={classes.testCard}>
                     <CardContent className={classes.cardContent}>

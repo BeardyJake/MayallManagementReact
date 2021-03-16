@@ -13,6 +13,7 @@ const TopNav = (props) => {
     const classes = useStyles();
     const theme = useTheme();
 
+
     const handleClick = (elementId) => {
         document.getElementById(elementId).scrollIntoView({behviour: 'smooth'})
     };
@@ -74,7 +75,7 @@ const TopNav = (props) => {
                     <IconButton
                         edge="start"
                         className={classes.menuButton}
-                        color="inherit"
+                        color="#000"
                         aria-label="menu"
                         onClick={handleMenu}
                     >

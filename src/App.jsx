@@ -7,18 +7,30 @@ import About from './About.jsx';
 import Header from './Header.jsx';
 import Contact from './Contact.jsx';
 import TopNav from './TopNav.jsx';
+import Footer from './Footer.jsx';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 
 const App = () => {
     const classes = useStyles();
+    const theme = createMuiTheme({
+        typography: {
+            fontFamily: ['Poppins, sans-serif'],
+            fontWeightLight: 300,
+            fontWeightRegular: 400,
+            fontWeightMedium: 500
+        }
+    });
+
 
     return (
         <>
-
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
         {/*------------------------------Navigation Section------------------------------*/}
 
-          <CssBaseline />
-          <TopNav />
+         
+            <TopNav />
 
         {/*------------------------------Header Section------------------------------*/}
 
@@ -45,6 +57,13 @@ const App = () => {
             </div>
 
         {/*------------------------------Footer Section------------------------------*/}
+            <div>
+                <Footer />
+            </div>
+        
+        
+        
+        </ThemeProvider>
         </>
     )
 }

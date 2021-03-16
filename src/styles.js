@@ -6,17 +6,23 @@ const useStyles = makeStyles((theme) => ({
     appBar: {
         backgroundColor: '#EFEFEF',
     },
+    menuButton: {
+        marginLeft: 'auto',
+        marginRight: theme.spacing(2)
+    },
     main: {
-        padding: '160px 100px 140px 100px',
+        padding: '160px 50px 140px 50px',
         backgroundImage: `url(${logo})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '100% 50%',
         backgroundAttachment: 'fixed',
         backgroundSize: 'contain',
         backgroundColor: theme.palette.paper,
-        [theme.breakpoints.down('md')]: {
-            padding: '150px 50px 100px 50px',
-        },
+        [theme.breakpoints.down('xs')]: {
+            backgroundPosition: '90% 15%',
+            backgroundSize: '200px',
+            padding: '150px 50px 50px 50px',
+        }
     },
     button: {
         margin: '0 20px',
@@ -28,23 +34,17 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '0.9rem',
             margin: '0'
         },
-       /* [theme.breakpoints.down('xs')]: {
-            display: 'none'
-        },*/
-    },
-    headerContainer: {
-        borderRadius: '10%',
-        [theme.breakpoints.down('md')]: {
-            backgroundColor: 'rgba(149,228,239,0.3)',
-        },
     },
     title: {
-        fontWeight: 'bold',
+        fontWeight: '500',
         //borderBottom: '4px solid #6B7A8F',
         paddingBottom: '10px',
         transition: 'all .4s ease-out 0s',
         [theme.breakpoints.down('md')]: {
             fontSize: '4rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '2.5rem'
         },
     },
     subtitle: {
@@ -52,10 +52,13 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('md')]: {
             fontSize: '2rem',
         },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '1.2rem'
+        },
     },
     sectionHeader: {
         paddingBottom: '30px',
-        fontWeight: '450'
+        fontWeight: '450',
     },
     about: {
         padding: '20px 0',
@@ -93,21 +96,44 @@ const useStyles = makeStyles((theme) => ({
         padding: '0 50px',
         [theme.breakpoints.down('md')]: {
             margin: '0',
+            padding: '0',
         },
     },
     contact: {
-        padding: '100px 0',
+        padding: '50px 0',
         backgroundColor: '#07889B' // '#7F9FD2'
     },
     form: {
         width: '100%',
-        marginTop: theme.spacing(3),
+        marginTop: theme.spacing(2),
     },
     submit: {
-        margin: theme.spacing(3, 0, 2,)
+        margin: theme.spacing(3, 0, 2),
+        maxWidth: '100'
     },
-    contactInfo: {
-        margin: '0 50px 50px 0'
+    socialGrid: {
+        [theme.breakpoints.up('lg')]: {
+            marginLeft: '180px'
+        },
+        [theme.breakpoints.down('md')]: {
+            marginTop: '50px'
+        },
+    },
+    socialButtons: {
+        padding: 24,
+        [theme.breakpoints.down('sm')]: {
+            padding: 12
+        },
+    },
+    socialIcons: {
+        fontSize: '12rem',
+        color: '#EFEFEF',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '6rem'
+        },
+    },
+    footer: {
+        padding: theme.spacing(2),
     },
 }));
 
