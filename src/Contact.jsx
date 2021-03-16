@@ -45,7 +45,8 @@ const Contact = (props) => {
                                         variant='outlined'
                                         fullWidth
                                         id='firstName'
-                                        label='First Name'                                   
+                                        label='First Name'
+                                        required='true'                                 
                                         />
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
@@ -65,7 +66,8 @@ const Contact = (props) => {
                                         variant='outlined'
                                         fullWidth
                                         id='email'
-                                        label='Email'                        
+                                        label='Email Address'
+                                        required='true'                    
                                         />                        
                                     </Grid>
                                     <Grid item xs={12}>
@@ -76,7 +78,9 @@ const Contact = (props) => {
                                         fullWidth
                                         id='message'
                                         label='Talk to us...' 
-                                        multiline='true'                
+                                        multiline='true'
+                                        rows='5'
+                                        required='true'       
                                         />
                                     </Grid>
                                     <Grid item xs={12}>
@@ -86,7 +90,7 @@ const Contact = (props) => {
                                         variant='contained'
                                         className={classes.submit}
                                         >
-                                        Contact Us
+                                          Submit
                                         </Button>
                                     </Grid>
                                 </Grid>                               

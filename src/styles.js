@@ -4,7 +4,7 @@ import Color from 'color';
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
-        backgroundColor: '#EFEFEF',
+        backgroundColor: '#C0E6E9',
     },
     menuButton: {
         marginLeft: 'auto',
@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     testimonials: {
-        padding: '100px 0',
+        padding: '50px 0 100px 0',
         backgroundColor: '#66B9BF'
     },
     testCard: {
@@ -103,15 +103,21 @@ const useStyles = makeStyles((theme) => ({
         padding: '50px 0',
         backgroundColor: '#07889B' // '#7F9FD2'
     },
+    contactInfo: {
+        color: '#fff'
+    },
     form: {
         width: '100%',
         marginTop: theme.spacing(2),
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
-        maxWidth: '100'
+        maxWidth: '100',
+        backgroundColor: '#F7882F',
+        color: 'white'
     },
     socialGrid: {
+        marginTop: '50px',
         [theme.breakpoints.up('lg')]: {
             marginLeft: '180px'
         },
