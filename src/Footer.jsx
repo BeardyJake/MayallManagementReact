@@ -7,13 +7,13 @@ const Footer = (props) => {
 
     return(
         <footer className={classes.footer}>
-            <Typography variant='h6' align='center' gutterBottom>
-                Footer
+            <Typography className={classes.footerText} variant='h6' align='center'>
+                Proudly supporting <a href='https://www.no-offence.org/unlock-your-future/' target='_blank'>No Offence! Unlock Your Future</a>
             </Typography>
-            <Typography variant='subtitle1' align='center' color='textSecondary' component='p'>
-                Here is the footer text
+            <Typography className={classes.footerText} variant='subtitle1' align='center' component='p' gutterBottom>
+                "Breaking down barriers to employment for people with convictions"
             </Typography>
-            <Typography variant='body2' color='textSecondary' align='center'>
+            <Typography className={classes.footerText} variant='body2' color='textSecondary' align='center'>
                 {'Copyright © '}
                 {'Mayall Management Ltd., '}
                 {new Date().getFullYear()}

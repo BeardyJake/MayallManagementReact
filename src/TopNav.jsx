@@ -35,7 +35,7 @@ const TopNav = (props) => {
             elementId: 'main'
         },
         {
-            buttonTitle: 'About',
+            buttonTitle: 'Services',
             elementId: 'about'
         },
         {
@@ -54,7 +54,7 @@ const TopNav = (props) => {
             elementId: 'main'
         },
         {
-            menuTitle: 'About',
+            menuTitle: 'Services',
             elementId: 'about'
         },
         {

@@ -13,24 +13,24 @@ const Contact = (props) => {
         <Container align='center'>
             <Grid container>
                 <Grid item xs={12} md={6}>
-                        <Container className={classes.contactInfo}>
+                        <Container>
                             <CssBaseline />
-                            <Typography variant='h4' align='center'>
+                            <Typography variant='h4' align='center' className={classes.contactUs}>
                                 Contact Us!
                             </Typography>
-                            <Typography variant='h6' align='center'>
+                            <Typography variant='h6' align='center' className={classes.contactInfo}>
                                 Be in touch today.
                             </Typography>
-                            <Typography variant='h6' align='center'>
+                            <Typography variant='h6' align='center' className={classes.contactInfo}>
                                 We can do and make business together.
                             </Typography>
-                            <Typography variant='h6' align='center'>
+                            <Typography variant='h6' align='center' className={classes.contactInfo}>
                                 Dover, United Kingdom, CT16 1ET
                             </Typography>
-                            <Typography variant='h6' align='center'>
+                            <Typography variant='h6' align='center' className={classes.contactInfo}>
                                 berniemayall@gmail.com
                             </Typography>
-                            <Typography variant='h6' align='center'>
+                            <Typography variant='h6' align='center' className={classes.contactInfo}>
                                 07757262380
                             </Typography>
                         </Container>

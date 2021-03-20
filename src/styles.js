@@ -44,33 +44,52 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '4rem',
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '2.5rem'
+            fontSize: '5vh'
         },
     },
     subtitle: {
         transition: 'all .4s ease-out 0s',
+        marginRight: '150px',
         [theme.breakpoints.down('md')]: {
             fontSize: '2rem',
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '1.2rem'
+            fontSize: '2.5vh'
         },
     },
     sectionHeader: {
-        paddingBottom: '30px',
+        transition: 'all .4s ease-out 0s',
+        padding: '30px 0 50px 0',
         fontWeight: '450',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '3rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '5vh'
+        },
     },
     about: {
-        padding: '20px 0',
+        padding: '40px 0',
         backgroundColor: '#EFAA76' //'#034DA2'
     },
+    aboutParagraph: {
+        marginBottom: '30px',
+        fontSize: '16px',
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '0.8rem'
+        },
+    },
     cardGrid: {
-        padding: '20px 40px',
+        padding: '0px 20px 40px 20px',
     },
     card: {
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
+        transition: "transform 0.15s ease-in-out",
+        "&:hover": {
+            transform: "scale3d(1.08, 1.08, 1)"
+        },
     },
     cardHead: {
         fontWeight: 'bold',
@@ -103,8 +122,14 @@ const useStyles = makeStyles((theme) => ({
         padding: '50px 0',
         backgroundColor: '#07889B' // '#7F9FD2'
     },
-    contactInfo: {
+    contactUs: {
         color: '#fff'
+    },
+    contactInfo: {
+        color: '#fff',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1rem',
+        },
     },
     form: {
         width: '100%',
@@ -118,17 +143,14 @@ const useStyles = makeStyles((theme) => ({
     },
     socialGrid: {
         marginTop: '50px',
-        [theme.breakpoints.up('lg')]: {
-            marginLeft: '180px'
-        },
-        [theme.breakpoints.down('md')]: {
-            marginTop: '50px'
+        [theme.breakpoints.up('xl')]: {
+            marginLeft: '170px'
         },
     },
     socialButtons: {
         padding: 24,
         [theme.breakpoints.down('sm')]: {
-            padding: 12
+            padding: 0
         },
     },
     socialIcons: {
@@ -140,6 +162,11 @@ const useStyles = makeStyles((theme) => ({
     },
     footer: {
         padding: theme.spacing(2),
+    },
+    footerText: {
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '0.8rem'
+        },
     },
 }));
 
