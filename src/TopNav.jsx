@@ -4,8 +4,44 @@ import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import useStyles from './styles';
+import { makeStyles } from '@material-ui/core/styles';
 import { useTheme } from '@material-ui/core/styles';
+import logo from './assets/MMLogo.png';
+
+const useStyles = makeStyles((theme) => ({
+    appBar: {
+        backgroundColor: '#C0E6E9',
+    },
+    menuButton: {
+        marginLeft: 'auto',
+        marginRight: theme.spacing(2)
+    },
+    main: {
+        padding: '160px 50px 140px 50px',
+        backgroundImage: `url(${logo})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '100% 50%',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'contain',
+        backgroundColor: theme.palette.paper,
+        [theme.breakpoints.down('xs')]: {
+            backgroundPosition: '90% 15%',
+            backgroundSize: '200px',
+            padding: '150px 50px 50px 50px',
+        }
+    },
+    button: {
+        margin: '0 20px',
+        width: '100%',
+        fontSize: '24px',
+        color: '#000',
+        transition: 'all .3s ease-in-out 0s',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '0.9rem',
+            margin: '0'
+        },
+    },
+}))
 
 const TopNav = (props) => {
     const classes = useStyles();

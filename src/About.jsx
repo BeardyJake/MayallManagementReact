@@ -1,7 +1,36 @@
 import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@material-ui/core';
-import useStyles from './styles';
-
+import { makeStyles } from '@material-ui/core/styles';
 import SectionHeader from './SectionHeader';
+
+const useStyles = makeStyles((theme) => ({
+    cardGrid: {
+        padding: '0px 20px 40px 20px',
+    },
+    card: {
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        transition: "transform 0.15s ease-in-out",
+        "&:hover": {
+            transform: "scale3d(1.08, 1.08, 1)"
+        },
+    },
+    cardHead: {
+        fontWeight: 'bold',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '1.2rem',
+        },
+    },
+    cardText: {
+        fontSize: '14px',
+    },
+    cardMedia: {
+        paddingTop: '56.25%', //16:9 aspect ratio
+    },
+    cardContent: {
+        flexGrow: 1,
+    },
+}))
 
 const About = (props) => {
     const classes = useStyles();

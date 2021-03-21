@@ -1,7 +1,29 @@
 import { Card, CardContent, Typography, Container, Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import Carousel from 'react-material-ui-carousel';
-import useStyles from './styles';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuoteRounded';
+
+const useStyles = makeStyles((theme) => ({
+    testCard: {
+        margin: '0 200px',
+        padding: '0 50px',
+        [theme.breakpoints.down('md')]: {
+            margin: '0',
+            padding: '0',
+        },
+    },
+    sectionHeader: {
+        transition: 'all .4s ease-out 0s',
+        padding: '30px 0 50px 0',
+        fontWeight: '450',
+        [theme.breakpoints.down('md')]: {
+            fontSize: '3rem',
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '4vh'
+        },
+    },
+}))
 
 const Testimonials = (props) => {
     const classes = useStyles();

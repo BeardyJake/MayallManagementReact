@@ -1,9 +1,49 @@
 import { Button, CssBaseline, Typography, TextField, Grid, Container, IconButton } from '@material-ui/core';
-import useStyles from './styles';
+import { makeStyles } from '@material-ui/core/styles';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+const useStyles = makeStyles((theme) => ({
+    contactUs: {
+        color: '#fff'
+    },
+    contactInfo: {
+        color: '#fff',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1rem',
+        },
+    },
+    form: {
+        width: '100%',
+        marginTop: theme.spacing(2),
+    },
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+        maxWidth: '100',
+        backgroundColor: '#F7882F',
+        color: 'white'
+    },
+    socialGrid: {
+        marginTop: '50px',
+        [theme.breakpoints.up('xl')]: {
+            marginLeft: '170px'
+        },
+    },
+    socialButtons: {
+        padding: 24,
+        [theme.breakpoints.down('sm')]: {
+            padding: 0
+        },
+    },
+    socialIcons: {
+        fontSize: '12rem',
+        color: '#EFEFEF',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '6rem'
+        },
+    },
+}))
 
 const Contact = (props) => {
 
