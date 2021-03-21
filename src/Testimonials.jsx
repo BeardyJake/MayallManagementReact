@@ -3,9 +3,7 @@ import Carousel from 'react-material-ui-carousel';
 import useStyles from './styles';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuoteRounded';
 
-
 const Testimonials = (props) => {
-
     const classes = useStyles();
 
     return (

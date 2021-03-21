@@ -1,15 +1,14 @@
 import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 import useStyles from './styles';
 
+import SectionHeader from './SectionHeader';
 
 const About = (props) => {
     const classes = useStyles();
 
     return (
         <Container className={classes.cardGrid}  maxWidth='lg'>
-            <Typography className={classes.sectionHeader} variant='h2' align='center'>
-                What Can We Do For You?
-            </Typography>
+            <SectionHeader content='What Can We Do For You?' />
             <Grid container justify='space-around' spacing={4}>
             <Grid item xs={12} md={4} sm={6}>
                 <Card className={classes.card} elevation='18'>
