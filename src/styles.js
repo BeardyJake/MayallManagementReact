@@ -1,6 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
 import logo from './MMLogo.png';
-import Color from 'color';
 
 const useStyles = makeStyles((theme) => ({
     appBar: {

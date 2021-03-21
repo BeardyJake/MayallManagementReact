@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 import useStyles from './styles';
 

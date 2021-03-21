@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Typography, Container, Grid } from '@material-ui/core';
+import { Card, CardContent, Typography, Container, Grid } from '@material-ui/core';
 import Carousel from 'react-material-ui-carousel';
 import useStyles from './styles';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuoteRounded';

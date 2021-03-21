@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { AppBar, Toolbar, Button, Typography, Menu } from '@material-ui/core';
+import { useState } from 'react';
+import { AppBar, Toolbar, Button, Menu } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import useStyles from './styles';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 
 
 
@@ -13,20 +13,12 @@ const TopNav = (props) => {
     const classes = useStyles();
     const theme = useTheme();
 
-
-    const handleClick = (elementId) => {
-        document.getElementById(elementId).scrollIntoView({behviour: 'smooth'})
-    };
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
 
     const handleMenu = event => {
         setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
     };
 
     const buttons = [

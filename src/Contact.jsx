@@ -1,4 +1,4 @@
-import { Button, CssBaseline, Typography, TextField, FormControlLabel, Grid, Container, Box, Link, IconButton } from '@material-ui/core';
+import { Button, CssBaseline, Typography, TextField, Grid, Container, IconButton } from '@material-ui/core';
 import useStyles from './styles';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import EmailIcon from '@material-ui/icons/Email';

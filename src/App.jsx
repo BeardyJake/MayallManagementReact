@@ -1,6 +1,5 @@
 import React from 'react';
-import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { CssBaseline } from '@material-ui/core';
 import useStyles from './styles';
 import Testimonials from './Testimonials.jsx';
 import About from './About.jsx';
