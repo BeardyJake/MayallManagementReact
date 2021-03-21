@@ -1,10 +1,10 @@
 import { Typography, Grid } from '@material-ui/core';
 import useStyles from './styles';
-import DBL from './DoverBigLocal.png';
-import GBCA from './GBCAJudge.jpg';
-import NCVO from './NCVOLogo.png';
-import NAG from './nestAndGrow.png';
-import TSL from './ThirdSectorLeaders.png';
+import DBL from './logos/DoverBigLocal.png';
+import GBCA from './logos/GBCAJudge.jpg';
+import NCVO from './logos/NCVOLogo.png';
+import NAG from './logos/nestAndGrow.png';
+import TSL from './logos/ThirdSectorLeaders.png';
 
 
 
