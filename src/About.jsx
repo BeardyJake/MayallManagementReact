@@ -34,7 +34,7 @@ const About = (props) => {
                     <CardMedia 
                         className={classes.cardMedia}
                         image='https://bit.ly/3ly0AV7'
-                        title='Image Title'
+                        title='Business Mentoring'
                     />
                     <CardContent className={classes.cardContent}>
                         <Typography className={classes.cardHead} gutterBottom variant='h5' align='center'>
@@ -50,8 +50,8 @@ const About = (props) => {
                 <Card className={classes.card} elevation='18'>
                     <CardMedia 
                         className={classes.cardMedia}
-                        image='https://source.unsplash.com/random'
-                        title='Image Title'
+                        image='https://bit.ly/3f70jrb'
+                        title='Cross Sector Support'
                     />
                     <CardContent className={classes.cardContent}>
                         <Typography className={classes.cardHead} gutterBottom variant='h5' align='center'>

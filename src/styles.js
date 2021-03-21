@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: '150px',
         [theme.breakpoints.down('md')]: {
             fontSize: '2rem',
+            marginRight: '0px',
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: '2.5vh'
@@ -65,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '3rem',
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: '5vh'
+            fontSize: '4vh'
         },
     },
     about: {
@@ -120,7 +121,7 @@ const useStyles = makeStyles((theme) => ({
     },
     contact: {
         padding: '50px 0',
-        backgroundColor: '#07889B' // '#7F9FD2'
+        backgroundColor: '#07889B'
     },
     contactUs: {
         color: '#fff'
@@ -161,9 +162,14 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     footer: {
-        padding: theme.spacing(2),
+        padding: '30px 0 20px 0',
+    },
+    footerLogos: {
+        height: '100px',
+        width: '100px',
     },
     footerText: {
+        paddingTop: '20px',
         [theme.breakpoints.down('sm')]: {
             fontSize: '0.8rem'
         },
