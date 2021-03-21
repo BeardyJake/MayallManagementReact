@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     },
     about: {
         padding: '40px 0',
-        backgroundColor: '#EFAA76' //'#034DA2'
+        backgroundColor: '#EFAA76'
     },
     aboutParagraph: {
         marginBottom: '30px',
