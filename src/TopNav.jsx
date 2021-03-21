@@ -7,8 +7,6 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import useStyles from './styles';
 import { useTheme } from '@material-ui/core/styles';
 
-
-
 const TopNav = (props) => {
     const classes = useStyles();
     const theme = useTheme();
