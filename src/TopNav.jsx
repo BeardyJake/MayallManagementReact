@@ -6,7 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTheme } from '@material-ui/core/styles';
-import logo from './assets/MMLogo.png';
+
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -15,20 +15,6 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
         marginLeft: 'auto',
         marginRight: theme.spacing(2)
-    },
-    main: {
-        padding: '160px 50px 140px 50px',
-        backgroundImage: `url(${logo})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: '100% 50%',
-        backgroundAttachment: 'fixed',
-        backgroundSize: 'contain',
-        backgroundColor: theme.palette.paper,
-        [theme.breakpoints.down('xs')]: {
-            backgroundPosition: '90% 15%',
-            backgroundSize: '200px',
-            padding: '150px 50px 50px 50px',
-        }
     },
     button: {
         margin: '0 20px',
