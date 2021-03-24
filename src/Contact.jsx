@@ -5,6 +5,10 @@ import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
+    contact: {
+        padding: '50px 0',
+        backgroundColor: '#07889B'
+    },
     contactUs: {
         color: '#fff'
     },
@@ -50,6 +54,7 @@ const Contact = (props) => {
     const classes = useStyles();
 
     return(
+        <div className={classes.contact} id='contact'>
         <Container align='center'>
             <Grid container>
                 <Grid item xs={12} md={6}>
@@ -76,7 +81,7 @@ const Contact = (props) => {
                         </Container>
                         <Container >
                             <CssBaseline />
-                            <form className={classes.form} method='POST' data-netlify='true'>
+                            <form className={classes.form} name='contact' method='POST' data-netlify='true'>
                                 <Grid container spacing={2} xs={12} align='center'>
                                     <Grid item xs={12} sm={6}>
                                         <TextField
@@ -158,6 +163,7 @@ const Contact = (props) => {
                     </Grid>
                 </Grid>       
         </Container>
+        </div>
     )
 };
 

@@ -3,6 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import SectionHeader from './SectionHeader';
 
 const useStyles = makeStyles((theme) => ({
+    about: {
+        padding: '40px 0',
+        backgroundColor: '#EFAA76'
+    },
     cardGrid: {
         padding: '0px 20px 40px 20px',
     },
@@ -36,6 +40,7 @@ const About = (props) => {
     const classes = useStyles();
 
     return (
+        <div className={classes.about} id='about'>
         <Container className={classes.cardGrid}  maxWidth='lg'>
             <SectionHeader content='What Can We Do For You?' />
             <Grid container justify='space-around' spacing={4}>
@@ -92,6 +97,7 @@ const About = (props) => {
             </Grid>
             </Grid>
         </Container>
+        </div>
     )
 };
 

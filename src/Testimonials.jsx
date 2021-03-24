@@ -4,6 +4,10 @@ import Carousel from 'react-material-ui-carousel';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuoteRounded';
 
 const useStyles = makeStyles((theme) => ({
+    testimonials: {
+        padding: '50px 0 100px 0',
+        backgroundColor: '#66B9BF'
+    },
     testCard: {
         margin: '0 200px',
         padding: '0 50px',
@@ -29,6 +33,7 @@ const Testimonials = (props) => {
     const classes = useStyles();
 
     return (
+        <div className={classes.testimonials} id='testimonials'>
         <Container maxWidth='lg'> 
             <Typography className={classes.sectionHeader} variant='h2' align='center'>
                 What People Say About Us
@@ -114,6 +119,7 @@ const Testimonials = (props) => {
                 </Card>
             </Carousel>
         </Container>
+        </div>
     )
 }
 
