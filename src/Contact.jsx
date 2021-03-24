@@ -55,114 +55,114 @@ const Contact = (props) => {
 
     return(
         <div className={classes.contact} id='contact'>
-        <Container align='center'>
-            <Grid container>
-                <Grid item xs={12} md={6}>
-                        <Container>
-                            <CssBaseline />
-                            <Typography variant='h4' align='center' className={classes.contactUs}>
-                                Contact Us!
-                            </Typography>
-                            <Typography variant='h6' align='center' className={classes.contactInfo}>
-                                Be in touch today.
-                            </Typography>
-                            <Typography variant='h6' align='center' className={classes.contactInfo}>
-                                We can do and make business together.
-                            </Typography>
-                            <Typography variant='h6' align='center' className={classes.contactInfo}>
-                                Dover, United Kingdom, CT16 1ET
-                            </Typography>
-                            <Typography variant='h6' align='center' className={classes.contactInfo}>
-                                berniemayall@gmail.com
-                            </Typography>
-                            <Typography variant='h6' align='center' className={classes.contactInfo}>
-                                07757262380
-                            </Typography>
-                        </Container>
-                        <Container >
-                            <CssBaseline />
-                            <form className={classes.form} name='contact' method='POST' data-netlify='true'>
-                                <Grid container spacing={2} xs={12} align='center'>
-                                    <Grid item xs={12} sm={6}>
-                                        <TextField
-                                        autoComplete='fname'
-                                        name='firstName'
-                                        variant='outlined'
-                                        fullWidth
-                                        id='firstName'
-                                        label='First Name'
-                                        required='true'                                 
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12} sm={6}>
-                                        <TextField
-                                        autoComplete='lname'
-                                        name='lastName'
-                                        variant='outlined'
-                                        fullWidth
-                                        id='lastName'
-                                        label='Last Name'                        
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12} sm={12}>
-                                        <TextField
-                                        autoComplete='email'
-                                        name='email'
-                                        variant='outlined'
-                                        fullWidth
-                                        id='email'
-                                        label='Email Address'
-                                        required='true'                    
-                                        />                        
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <TextField
-                                        autoComplete='message'
-                                        name='message'
-                                        variant='outlined'
-                                        fullWidth
-                                        id='message'
-                                        label='Talk to us...' 
-                                        multiline='true'
-                                        rows='5'
-                                        required='true'       
-                                        />
-                                    </Grid>
-                                    <Grid item xs={12}>
-                                        <Button
-                                        fullWidth
-                                        type='submit'
-                                        variant='contained'
-                                        className={classes.submit}
-                                        >
-                                          Submit
-                                        </Button>
-                                    </Grid>
-                                </Grid>                               
-                            </form>
-                        </Container>
-                    </Grid>
+            <Container align='center'>
+                <Grid container>
                     <Grid item xs={12} md={6}>
-                        <Grid container className={classes.socialGrid} xs={12} align='center'>
-                            <Grid item xs={4} md={6}>
-                                <IconButton className={classes.socialButtons} href='https://www.facebook.com/MayallManagement/' target='_blank'>
-                                    <FacebookIcon className={classes.socialIcons} />
-                                </IconButton>
-                            </Grid>
-                            <Grid item xs={4} md={6}>
-                                <IconButton className={classes.socialButtons} href='https://www.linkedin.com/company/mayall-management-ltd' target='_blank'>
-                                    <LinkedInIcon className={classes.socialIcons} />
-                                </IconButton>
-                            </Grid>
-                            <Grid item xs={4} md={12}>
-                                <IconButton className={classes.socialButtons} href='mailto:berniemayall@gmail.com'>
-                                    <EmailIcon className={classes.socialIcons} />
-                                </IconButton>
+                            <Container>
+                                <CssBaseline />
+                                <Typography variant='h4' align='center' className={classes.contactUs}>
+                                    Contact Us!
+                                </Typography>
+                                <Typography variant='h6' align='center' className={classes.contactInfo}>
+                                    Be in touch today.
+                                </Typography>
+                                <Typography variant='h6' align='center' className={classes.contactInfo}>
+                                    We can do and make business together.
+                                </Typography>
+                                <Typography variant='h6' align='center' className={classes.contactInfo}>
+                                    Dover, United Kingdom, CT16 1ET
+                                </Typography>
+                                <Typography variant='h6' align='center' className={classes.contactInfo}>
+                                    berniemayall@gmail.com
+                                </Typography>
+                                <Typography variant='h6' align='center' className={classes.contactInfo}>
+                                    07757262380
+                                </Typography>
+                            </Container>
+                            <Container >
+                                <CssBaseline />
+                                <form className={classes.form} name='contact' method='POST' data-netlify='true'>
+                                    <Grid container spacing={2} xs={12} align='center'>
+                                        <Grid item xs={12} sm={6}>
+                                            <TextField
+                                            autoComplete='fname'
+                                            name='firstName'
+                                            variant='outlined'
+                                            fullWidth
+                                            id='firstName'
+                                            label='First Name'
+                                            required='true'                                 
+                                            />
+                                        </Grid>
+                                        <Grid item xs={12} sm={6}>
+                                            <TextField
+                                            autoComplete='lname'
+                                            name='lastName'
+                                            variant='outlined'
+                                            fullWidth
+                                            id='lastName'
+                                            label='Last Name'                        
+                                            />
+                                        </Grid>
+                                        <Grid item xs={12} sm={12}>
+                                            <TextField
+                                            autoComplete='email'
+                                            name='email'
+                                            variant='outlined'
+                                            fullWidth
+                                            id='email'
+                                            label='Email Address'
+                                            required='true'                    
+                                            />                        
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <TextField
+                                            autoComplete='message'
+                                            name='message'
+                                            variant='outlined'
+                                            fullWidth
+                                            id='message'
+                                            label='Talk to us...' 
+                                            multiline='true'
+                                            rows='5'
+                                            required='true'       
+                                            />
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Button
+                                            fullWidth
+                                            type='submit'
+                                            variant='contained'
+                                            className={classes.submit}
+                                            >
+                                            Submit
+                                            </Button>
+                                        </Grid>
+                                    </Grid>                               
+                                </form>
+                            </Container>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <Grid container className={classes.socialGrid} xs={12} align='center'>
+                                <Grid item xs={4} md={6}>
+                                    <IconButton className={classes.socialButtons} href='https://www.facebook.com/MayallManagement/' target='_blank'>
+                                        <FacebookIcon className={classes.socialIcons} />
+                                    </IconButton>
+                                </Grid>
+                                <Grid item xs={4} md={6}>
+                                    <IconButton className={classes.socialButtons} href='https://www.linkedin.com/company/mayall-management-ltd' target='_blank'>
+                                        <LinkedInIcon className={classes.socialIcons} />
+                                    </IconButton>
+                                </Grid>
+                                <Grid item xs={4} md={12}>
+                                    <IconButton className={classes.socialButtons} href='mailto:berniemayall@gmail.com'>
+                                        <EmailIcon className={classes.socialIcons} />
+                                    </IconButton>
+                                </Grid>
                             </Grid>
                         </Grid>
-                    </Grid>
-                </Grid>       
-        </Container>
+                    </Grid>       
+            </Container>
         </div>
     )
 };

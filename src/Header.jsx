@@ -46,8 +46,7 @@ const Header = (props) => {
 
     return (
         <div className={classes.main} id='main'>
-        <Grid container spacing={2} direction='row' lg={9} xs={12} justify='center'>
-            
+            <Grid container spacing={2} direction='row' lg={9} xs={12} justify='center'>
                 <Grid item lg={10} xs={12}>
                     <Typography className={classes.title} variant='h1'>
                         Mayall Management
@@ -58,8 +57,7 @@ const Header = (props) => {
                         In a Complex Changing World, We Bring Simplicity and Stability.
                     </Typography>
                 </Grid>
-    
-        </Grid>
+            </Grid>
         </div>
     )
 }
