@@ -82,6 +82,7 @@ const Contact = (props) => {
                             <Container >
                                 <CssBaseline />
                                 <form className={classes.form} name='contact' method='POST' data-netlify='true'>
+                                    <input type='hidden' name='contact' value='contact' />
                                     <Grid container spacing={2} xs={12} align='center'>
                                         <Grid item xs={12} sm={6}>
                                             <TextField
