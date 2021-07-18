@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const useStyles = makeStyles((theme) => ({
     contact: {
@@ -36,9 +37,6 @@ const useStyles = makeStyles((theme) => ({
     },
     socialButtons: {
         padding: 24,
-        [theme.breakpoints.down('sm')]: {
-            padding: 0
-        },
     },
     socialIcons: {
         fontSize: '12rem',
@@ -145,19 +143,24 @@ const Contact = (props) => {
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Grid container className={classes.socialGrid} xs={12} align='center'>
-                                <Grid item xs={4} md={6}>
+                                <Grid item xs={6} md={6}>
                                     <IconButton className={classes.socialButtons} href='https://www.facebook.com/MayallManagement/' target='_blank'>
                                         <FacebookIcon className={classes.socialIcons} />
                                     </IconButton>
                                 </Grid>
-                                <Grid item xs={4} md={6}>
+                                <Grid item xs={6} md={6}>
                                     <IconButton className={classes.socialButtons} href='https://www.linkedin.com/company/mayall-management-ltd' target='_blank'>
                                         <LinkedInIcon className={classes.socialIcons} />
                                     </IconButton>
                                 </Grid>
-                                <Grid item xs={4} md={12}>
+                                <Grid item xs={6} md={6}>
                                     <IconButton className={classes.socialButtons} href='mailto:berniemayall@gmail.com'>
                                         <EmailIcon className={classes.socialIcons} />
+                                    </IconButton>
+                                </Grid>
+                                <Grid item xs={6} md={6}>
+                                    <IconButton className={classes.socialButtons} href='https://twitter.com/MayallMMent' target='_blank'>
+                                        <TwitterIcon className={classes.socialIcons} />
                                     </IconButton>
                                 </Grid>
                             </Grid>

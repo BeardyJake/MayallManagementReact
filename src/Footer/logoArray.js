@@ -3,6 +3,7 @@ import GBCA from '../assets/logos/GBCAJudge.jpg';
 import NCVO from '../assets/logos/NCVOLogo.png';
 import NAG from '../assets/logos/nestAndGrow.png';
 import TSL from '../assets/logos/ThirdSectorLeaders.png';
+import BSL from '../assets/logos/BestStartupLogo.png';
 
 export default [
     {
@@ -24,5 +25,9 @@ export default [
     {
         logoName: 'Third Sector Leaders',
         path: TSL,
+    },
+    {
+        logoName: 'Best Startup',
+        path: BSL,
     }
 ];
